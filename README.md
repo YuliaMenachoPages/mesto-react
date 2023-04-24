@@ -1,6 +1,6 @@
 # mesto-react
 
-Gh Pages: [https://yuliamenachopages.github.io/mesto/]
+Gh Pages: [https://yuliamenachopages.github.io/mesto-react/]
 
 На сайте представлена подборка информации об интересных направлениях для путешествий по России.
 
