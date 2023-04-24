@@ -7,7 +7,7 @@ function PopupWithForm(props) {
                 <form action="#" name={props.name} className={`popup__form popup__form_type_${props.name}`} noValidate>
                     <fieldset className={`popup__fieldset popup__fieldset_type_${props.name}`}>
                        {props.children}
-                        <button className="popup__button" type="submit" value="Submit">{props.submit}</button>
+                        <button className="popup__button" type="submit" value="Submit">{props.submit || "Сохранить"}</button>
                     </fieldset>
                 </form>
             </div>
