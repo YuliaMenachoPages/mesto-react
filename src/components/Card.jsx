@@ -31,7 +31,8 @@ function Card(props) {
                 {isOwn &&
                     <button type="button" aria-label="Удалить" className="element__delete element__delete_type_black"
                             onClick={handleDeleteClick}></button>}
-                <img onClick={handleClick} src={props.card.link} className="element__picture" alt="Фото."/>
+                <img onClick={handleClick} src={props.card.link} alt={`Фото. ${props.card.name}`}
+                     className="element__picture"/>
             </div>
             <div className="element__info">
                 <h2 className="element__text">{props.card.name}</h2>
