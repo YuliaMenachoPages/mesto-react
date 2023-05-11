@@ -42,13 +42,20 @@ export default class Api {
             .then(res => this._getResponseData(res));
     }
 
-// удалить лайк карточки (DELETE)
+// удалить лайк карточки (DELETE)xxs
     deleteLike(cardId) {
         return fetch(`${this.initialUrl}/cards/likes/${cardId}`, {
             method: 'DELETE',
             headers: this.headers,
         })
             .then(res => this._getResponseData(res));
+    }
+
+    changeLikeCardStatus(cardId, isLiked) {
+        if (!isLiked) {
+            return this.addLike(cardId);
+        }
+        return this.deleteLike(cardId);
     }
 
 //удалить карточку (DELETE)
